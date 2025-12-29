@@ -1,1 +1,1 @@
-# tpu_lite
+# Tensor Processing Unit Lite
