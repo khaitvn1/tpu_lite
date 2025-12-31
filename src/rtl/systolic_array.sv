@@ -3,18 +3,9 @@ module systolic_array #(
 ) (
     input logic clk,
     input logic rst,
-    input logic signed [DATA_WIDTH-1:0] a_row0_in,
-    input logic signed [DATA_WIDTH-1:0] a_row1_in,
-    input logic signed [DATA_WIDTH-1:0] b_col0_in,
-    input logic signed [DATA_WIDTH-1:0] b_col1_in,
-    input logic clear00,
-    input logic clear01,
-    input logic clear10,
-    input logic clear11,
-    output logic signed [(2*DATA_WIDTH)-1:0] c00_out,
-    output logic signed [(2*DATA_WIDTH)-1:0] c01_out,
-    output logic signed [(2*DATA_WIDTH)-1:0] c10_out,
-    output logic signed [(2*DATA_WIDTH)-1:0] c11_out
+    input logic signed [DATA_WIDTH-1:0] a_row0_in, a_row1_in, b_col0_in, b_col1_in,
+    input logic clear00, clear01, clear10, clear11,
+    output logic signed [(2*DATA_WIDTH)-1:0] c00_out, c01_out, c10_out, c11_out
 );
     logic signed [DATA_WIDTH-1:0] a00_to_a01;
     logic signed [DATA_WIDTH-1:0] a10_to_a11;

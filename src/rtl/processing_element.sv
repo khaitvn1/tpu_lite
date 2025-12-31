@@ -4,10 +4,8 @@ module processing_element #(
     input logic clk,
     input logic rst,
     input logic clear, // load first product for new dot product
-    input logic signed [DATA_WIDTH-1:0] a_in,
-    input logic signed [DATA_WIDTH-1:0] b_in,
-    output logic signed [DATA_WIDTH-1:0] a_out,
-    output logic signed [DATA_WIDTH-1:0] b_out,
+    input logic signed [DATA_WIDTH-1:0] a_in, b_in,
+    output logic signed [DATA_WIDTH-1:0] a_out, b_out,
     output logic signed [(2*DATA_WIDTH)-1:0] c_out
 );
 
