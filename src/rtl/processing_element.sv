@@ -23,7 +23,7 @@ module processing_element #(
             if (clear) begin
                 c_out <= product;
             end else begin
-                c_out <= c_out + prduct;
+                c_out <= c_out + product;
             end
         end
     end

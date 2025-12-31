@@ -43,7 +43,7 @@ module tpu_lite #(
     assign mem_wdata = sw[DATA_WIDTH-1:0];
 
     logic signed [DATA_WIDTH-1:0] a00, a01, a10, a11;
-    logic signed [DATA_WID TH-1:0] b00, b01, b10, b11;
+    logic signed [DATA_WIDTH-1:0] b00, b01, b10, b11;
 
     memory #(.DATA_WIDTH(DATA_WIDTH)) mem_a_inst (
         .clk(clk),

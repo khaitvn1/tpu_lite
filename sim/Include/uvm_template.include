@@ -1,0 +1,32 @@
+// Interface and package file
+../src/interfaces/uvm_template_if.svh
+
+// Source files
+../src/rtl/memory.sv
+../src/rtl/mmu.sv
+../src/rtl/processing_element.sv
+../src/rtl/systolic_array.sv
+../src/rtl/tpu_lite.sv
+
+// UVM packages files
+Testbench/sequences/uvm_template_seq_pkg.sv
+Testbench/agent/uvm_template_agent_pkg.sv
+Testbench/env/uvm_template_env_pkg.sv
+Testbench/tests/uvm_template_test_pkg.sv
+
+// UVM TB components
+Testbench/sequences/uvm_template_seq_item.sv
+Testbench/sequences/uvm_template_sequence.svh
+Testbench/sequences/uvm_template_seq_lib.sv
+Testbench/agent/uvm_template_sequencer.sv
+Testbench/agent/uvm_template_driver.sv
+Testbench/agent/uvm_template_monitor.sv
+Testbench/agent/uvm_template_timing_item.sv
+Testbench/agent/uvm_template_agent.sv
+Testbench/env/uvm_template_sb.sv
+Testbench/env/uvm_template_env.sv
+Testbench/tests/uvm_template_base_test.svh
+Testbench/tests/uvm_template_test_lib.sv
+
+// TB top file
+Testbench/tb/uvm_template_tb_top.sv
