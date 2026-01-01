@@ -45,13 +45,13 @@ module tpu_lite_dut_uvm #(
         .done(done)
     );
 
-    systolic_array #(.DATA_WIDTH(DATA_WIDTH)) {
+    systolic_array #(.DATA_WIDTH(DATA_WIDTH)) sa_inst (
         .clk(clk),
         .rst(rst),
         .a_row0_in(a_row0_in), .a_row1_in(a_row1_in),
         .b_col0_in(b_col0_in), .b_col1_in(b_col1_in),
         .clear00(clear00), .clear01(clear01),
         .clear10(clear10), .clear11(clear11),
-        .c00_out(c00), .c01_out(c01), .c10_out(10), .c11_out(11)
-    }
+        .c00_out(c00), .c01_out(c01), .c10_out(c10), .c11_out(c11)
+    );
 endmodule

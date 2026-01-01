@@ -28,7 +28,7 @@ module mmu #(
 
     typedef enum logic [1:0] {
         IDLE,
-        LOAD,
+        RUN,
         DONE
     } state_t;
     state_t state;
@@ -47,7 +47,7 @@ module mmu #(
         clear10 = 1'b0;
         clear11 = 1'b0;
 
-        busy = (state == LOAD);
+        busy = (state == RUN);
         done = (state == DONE);
 
         if (state == RUN) begin
@@ -93,7 +93,7 @@ module mmu #(
                 IDLE: begin
                     cycle <= '0;
                     if (start) begin
-                        state <= LOAD;
+                        state <= RUN;
                         cycle <= '0;
                     end
                 end
