@@ -77,6 +77,9 @@ module mmu #(
                     b_data1 = b11_t;
                     clear11 = 1'b1;
                 end
+                default: begin
+                    // let cycles 3, 4, flush the zeros
+                end
             endcase
         end
     end
@@ -96,7 +99,7 @@ module mmu #(
                 end
 
                 RUN: begin
-                    if (cycle == LAST_CYCLE - 1) begin
+                    if (cycle == LAST_CYCLE[2:0]) begin
                         state <= DONE;
                         cycle <= '0;
                     end else begin
@@ -108,7 +111,10 @@ module mmu #(
                     state <= IDLE;
                 end
 
-                default: state <= IDLE;
+                default: begin
+                    state <= IDLE;
+                    cycle <= '0;
+                end
             endcase
         end
     end

@@ -1,0 +1,33 @@
+// Interface and package file
+../src/interfaces/tpu_if.svh
+
+// Source files
+../src/rtl/memory.sv
+../src/rtl/mmu.sv
+../src/rtl/processing_element.sv
+../src/rtl/systolic_array.sv
+../src/rtl/tpu_lite.sv
+../src/rtl/tpu_lite_dut_uvm.sv
+
+// UVM packages files
+Testbench/sequences/tpu_seq_pkg.sv
+Testbench/agent/tpu_agent_pkg.sv
+Testbench/env/tpu_env_pkg.sv
+Testbench/tests/tpu_test_pkg.sv
+
+// UVM TB components
+Testbench/sequences/tpu_seq_item.sv
+Testbench/sequences/tpu_sequence.svh
+Testbench/sequences/tpu_seq_lib.sv
+Testbench/agent/tpu_sequencer.sv
+Testbench/agent/tpu_driver.sv
+Testbench/agent/tpu_monitor.sv
+Testbench/agent/tpu_timing_item.sv
+Testbench/agent/tpu_agent.sv
+Testbench/env/tpu_sb.sv
+Testbench/env/tpu_env.sv
+Testbench/tests/tpu_base_test.svh
+Testbench/tests/tpu_test_lib.sv
+
+// TB top file
+Testbench/tb/tpu_tb_top.sv

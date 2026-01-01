@@ -9,9 +9,9 @@
 #--------------------------------------------------------------------
 
 # ===== User-configurable knobs =====================================
-INCLUDE_FILE_NAME        	?= uvm_template.include
-TOPLEVEL					?= uvm_template_tb_top
-UVM_TESTNAME				?= all_uvm_template_test
+INCLUDE_FILE_NAME        	?= tpu.include
+TOPLEVEL					?= tpu_tb_top
+UVM_TESTNAME				?= all_tpu_test
 UVM_MAX_QUIT    			?= 1
 UVM_VERBOSITY   			?= UVM_FULL
 
