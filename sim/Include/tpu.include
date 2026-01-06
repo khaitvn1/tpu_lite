@@ -7,7 +7,6 @@
 ../src/rtl/processing_element.sv
 ../src/rtl/systolic_array.sv
 ../src/rtl/tpu_lite.sv
-../src/rtl/tpu_lite_dut_uvm.sv
 
 // UVM packages files
 Testbench/sequences/tpu_seq_pkg.sv

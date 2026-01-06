@@ -18,7 +18,7 @@ module tpu_tb_top;
 
     tpu_if #(DATA_WIDTH) vif (.clk(clk));
 
-    tpu_lite_dut_uvm #(.DATA_WIDTH(DATA_WIDTH)) dut (
+    tpu_lite #(.DATA_WIDTH(DATA_WIDTH)) dut (
         .clk(vif.clk),
         .rst(vif.rst),
         .wr_en(vif.wr_en),

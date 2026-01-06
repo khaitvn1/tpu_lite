@@ -18,8 +18,8 @@ set src_files [list \
   "$repo_root/src/rtl/mmu.sv" \
   "$repo_root/src/rtl/processing_element.sv" \
   "$repo_root/src/rtl/systolic_array.sv" \
-  "$repo_root/src/rtl/tpu_lite_dut_uvm.sv" \
   "$repo_root/src/rtl/tpu_lite.sv" \
+  "$repo_root/src/rtl/tpu_lite_basys3.sv" \
 ]
 
 # XDC constraints file
